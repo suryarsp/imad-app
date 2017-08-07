@@ -1,8 +1,4 @@
-body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
-}
+
 
 .center {
     text-align: center;
@@ -22,4 +18,152 @@ body {
 .white
 {
     color:white;
+}
+body
+{
+	background-color:lightgrey;
+	font-family : Verdana,Georgia,sans-serif;
+	font-size: 40px;
+	margin-top:40px;
+}
+/*--------------- Header Section-------------------*/
+header
+{
+	margin:10px;
+	height:90px;
+	background-color: green;
+	border-radius:5px;
+
+}
+/*--------------- Footer Section-------------------*/
+footer{
+	margin:10px;
+	height:90px;
+	font-size:50%;
+	background-color: #fff;
+	border-radius:5px;
+	color:black;
+	padding:10px;
+	text-align:center;
+}
+footer ul
+{
+	margin:10px;
+	padding:5px;
+	list-style-type:none;
+	text-align:center;
+	border-radius:3px;
+	font-size:120%;
+   
+}
+footer ul li{
+	display:inline;
+	
+}
+footer ul li a{
+	text-decoration:none;
+	font-family:arial;
+	padding:.2em 1em;
+	color:red;
+	
+}
+footer ul li a:hover
+{
+	background-color:black;
+	
+}
+
+/*--------------- Navbar Section-------------------*/
+#navbar ul
+{
+	margin:10px;
+	padding:5px;
+	list-style-type:none;
+	text-align:center;
+	background-color: #000;
+	border-radius:3px;
+	font-size:40%;
+
+}
+#navbar ul li{
+	display:inline;
+}
+#navbar ul li a{
+	text-decoration:none;
+	font-family:arial;
+	padding:.2em 1em;
+	color:#fff;
+	color:red;
+}
+#navbar ul li a:hover
+{
+	background-color:white;
+}
+/*--------------- Main Content Section-------------------*/
+.main{
+	margin-bottom:10px;
+	margin-left:10px;
+	margin-right:300px;
+	margin-top:10px;
+	background-color: white;
+	border-radius:5px;
+	padding:10px;
+	font-size:60%;
+}
+/*--------------- Side Content Section-------------------*/
+.sideright{
+	margin-bottom:10px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:0px;
+	background-color: white;
+	border-radius:5px;
+	padding:10px;
+	font-size:55%;
+	float:right;
+	width:260px;
+    clear:right;
+	}
+/*---------- Image Section-------------------*/
+#imgright{
+	margin-bottom:10px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:0px;
+	background-color: white;
+	border-radius:10px;
+	float:right;
+	width:283px;
+    clear:right;
+	opacity:1.0;
+	transition: opacity 0.4s ease-in-out;
+	}	
+	/* Hover part of image*/
+#imgright:hover
+	{
+		opacity:0.4; 
+		
+		
+	}
+h1
+{
+	color:red;
+	font-size:80%;
+}
+h2
+{
+	color:yellow;
+	font-size:80%;
+}
+header h3{
+	margin:0px;
+	font-size:120%;
+	font-family:"Times new roman";
+	position:relative;
+	top:20%;
+	text-shadow:1px solid white;
+	text-align:center;
+	
+	
+	
 }
