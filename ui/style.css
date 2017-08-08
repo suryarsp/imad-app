@@ -44,7 +44,7 @@ footer{
 	border-radius:5px;
 	color:black;
 	padding:5px;
-	text-align: -webkit-right;
+	text-align: center;
     clear:both;
     
 }
@@ -81,7 +81,7 @@ footer ul li a:hover
 	margin:10px;
 	padding:5px;
 	list-style-type:none;
-	text-align:center;
+	text-align:-webkit-right;
 	background-color: #000;
 	border-radius:3px;
 	font-size:40%;
