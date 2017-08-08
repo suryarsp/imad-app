@@ -37,14 +37,14 @@ header
 }
 /*--------------- Footer Section-------------------*/
 footer{
-	margin:10px;
-	height:90px;
-	font-size:50%;
+	margin:3px;
+	height:79px;
+	font-size:46%;
 	background-color: #fff;
 	border-radius:5px;
 	color:black;
-	padding:10px;
-	text-align:center;
+	padding:5px;
+	text-align: -webkit-right;
     clear:both;
     
 }
