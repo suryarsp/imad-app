@@ -75,16 +75,10 @@ var htmlTemplate =`
 app.get('/:pageNumber',function(req,res){
     //pagenumber==page-1
     //pages[pageNumber]==[]Content object for Page 1
+    var pageNumber=req.params.pageNumber;
     res.send(createTemplate(pages[pageNumber]));
 });
 
-app.get('/pageContent2',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'page2.html'));
-});
-
-app.get('/pageContent3',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'page3.html'));
-});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
