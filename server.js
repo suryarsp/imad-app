@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var page1Content={
+var pageContent={
     
     heading:'Surya|imadApp',
     title:'Page1',
@@ -53,7 +53,7 @@ var htmlTemplate =`
 
 
 app.get('/page1',function(req,res){
-    res.send(createTemplate(page1Content));
+    res.send(createTemplate(pageContent));
 });
 
 app.get('/page2',function(req,res){
