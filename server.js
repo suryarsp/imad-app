@@ -5,6 +5,24 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var page1Content={
+    
+    heading:"Surya|imadApp",
+    title:"Page1",
+    date:"*Aug 8",
+    content:""
+    
+    
+    
+    
+    
+};
+
+
+
+
+
+
 app.get('/page1',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'page1.html'));
 });
