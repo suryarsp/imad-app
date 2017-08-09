@@ -77,7 +77,7 @@ app.get('/:pageNumber',function(req,res){
     //pagenumber==page-1
     //pages[pageNumber]==[]Content object for Page 1
     var pageNumber=req.params.pageNumber;
-    res.send(createTemplate(pages['pageNumber']));
+    res.send(createTemplate(pages[pageNumber]));
 });
 
 
