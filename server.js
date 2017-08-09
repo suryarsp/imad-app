@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
  var pages={
- 'pageContent1':{
+ 'page1':{
     
     heading:'Surya @page1|imadApp',
     title:'Page1',
@@ -21,7 +21,7 @@ app.use(morgan('combined'));
     This is content of page1 This is content of page1 This is content of page1 This is content of page1 This is content of page1
     </p>`
     },
-    'pageContent2':{
+    'page2':{
          heading:'Surya @page 2|imadApp',
     title:'Page2',
     date:'Aug 8,2017',
@@ -30,7 +30,7 @@ app.use(morgan('combined'));
      This is content of page. This is content of page This is content of page2
      </p>`
     },
-    'pageContent3':{
+    'page3':{
         heading:'Surya @Page 3|imadApp',
     title:'Page3',
     date:'Aug 8,2017',
