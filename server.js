@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
  var pages={
- pageContent1:{
+ 'pageContent1':{
     
     heading:'Surya @page1|imadApp',
     title:'Page1',
@@ -21,7 +21,7 @@ app.use(morgan('combined'));
     This is content of page1 This is content of page1 This is content of page1 This is content of page1 This is content of page1
     </p>`
     },
-    pageContent2:{
+    'pageContent2':{
          heading:'Surya @page 2|imadApp',
     title:'Page2',
     date:'Aug 8,2017',
@@ -30,7 +30,7 @@ app.use(morgan('combined'));
      This is content of page. This is content of page This is content of page2
      </p>`
     },
-    pageContent3:{
+    'pageContent3':{
         heading:'Surya @Page 3|imadApp',
     title:'Page3',
     date:'Aug 8,2017',
@@ -74,14 +74,15 @@ var htmlTemplate =`
 
 app.get('/:pageNumber',function(req,res){
     //pagenumber==page-1
+    //pages[pageNumber]==[]Content object for Page 1
     res.send(createTemplate(pages[pageNumber]));
 });
 
-app.get('/page2',function(req,res){
+app.get('/pageContent2',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'page2.html'));
 });
 
-app.get('/page3',function(req,res){
+app.get('/pageContent3',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'page3.html'));
 });
 
