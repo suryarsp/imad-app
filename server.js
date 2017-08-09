@@ -5,9 +5,10 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var pageContent={
+ var pages={
+ pageContent1:{
     
-    heading:'Surya|imadApp',
+    heading:'Surya @page1|imadApp',
     title:'Page1',
     date:'Aug 8,2017',
     content:`
@@ -19,7 +20,26 @@ var pageContent={
     This is content of page1 This is content of page1 This is content of page1This is content of page1 This is content of page1 
     This is content of page1 This is content of page1 This is content of page1 This is content of page1 This is content of page1
     </p>`
-    };
+    },
+    pageContent2:{
+         heading:'Surya @page 2|imadApp',
+    title:'Page2',
+    date:'Aug 8,2017',
+    content:`
+     <p class="para"> 
+     This is content of page. This is content of page This is content of page2
+     </p>`
+    },
+    pageContent3:{
+        heading:'Surya @Page 3|imadApp',
+    title:'Page3',
+    date:'Aug 8,2017',
+    content:`
+     <p class="para"> 
+     This is content of page. This is content of page This is content of page2
+     </p>`
+    },
+ };
     
 function createTemplate (data) {
 var title= data.title;
@@ -37,7 +57,7 @@ var htmlTemplate =`
 <body>
      <div class="container" align="center">
      <a href="/">Home</a>   <hr>
-     <h1>${title}</h1>
+     <h1>${heading}</h1>
      <h2>${date}</h2>
      <div>
      ${content}
