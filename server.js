@@ -20,14 +20,14 @@ var page1Content={
     This is content of page1 This is content of page1 This is content of page1 This is content of page1 This is content of page1
     </p>
     };
-
+    
 function createTemplate (data) {
 var title= data.title;
 var heading=data.heading;
 var data=data.data;
 var content=data.content;
 
-var htmlTemplate ='
+var htmlTemplate =`
 <html>
 <head>
     <title>${heading}</title>
@@ -36,7 +36,7 @@ var htmlTemplate ='
 </head>
 <body>
      <div class="container" align="center">
-     <a href="/">Home</a><hr>
+     <a href="/">Home</a>   <hr>
      <h1>${title}</h1>
      <h2>${date}</h2>
      <div>
@@ -44,7 +44,7 @@ var htmlTemplate ='
     </div>
     </div>
 </body>
-</html>'
+</html>`
  ;   
     return htmlTemplate;
 
