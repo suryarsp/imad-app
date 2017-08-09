@@ -50,7 +50,7 @@ var content=data.content;
 var htmlTemplate =`
 <html>
 <head>
-    <title>${heading}</title>
+    <title>${title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/ui/style.css" rel="stylesheet" />
 </head>
@@ -79,13 +79,6 @@ app.get('/:pageNumber',function(req,res){
     res.send(createTemplate(pages[pageNumber]));
 });
 
-app.get('/pageContent2',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'page2.html'));
-});
-
-app.get('/pageContent3',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'page3.html'));
-});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
