@@ -24,7 +24,7 @@ app.use(morgan('combined'));
     pageContent2:{
          heading:'Surya @page 2|imadApp',
          title:'Page2',
-        date:'Aug 8,2017',
+        date:'Aug 9,2017',
         content:`
          <p class="para"> 
          This is content of page. This is content of page This is content of page2
@@ -33,7 +33,7 @@ app.use(morgan('combined'));
         pageContent3:{
             heading:'Surya @Page 3|imadApp',
         title:'Page3',
-        date:'Aug 8,2017',
+        date:'Aug 10,2017',
         content:`
          <p class="para"> 
          This is content of page. This is content of page This is content of page2
@@ -51,7 +51,7 @@ var content=data.content;
 var htmlTemplate =`
 <html>
 <head>
-    <title>${heading}</title>
+    <title>${title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/ui/style.css" rel="stylesheet" />
 </head>
