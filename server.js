@@ -41,7 +41,7 @@ app.use(morgan('combined'));
         },
  };
     
-function createTemplate (data) {
+function createTemplate(data){
     
 var title= data.title;
 var heading=data.heading;
@@ -77,7 +77,7 @@ app.get('/:pageNumber',function(req,res){
     //pagenumber==page-1
     //pages[pageNumber]==[]Content object for Page 1
     var pageNumber=req.params.pageNumber;
-    res.send(createTemplate(pages[pageNumber]));
+    res.send(createTemplate(pages['pageNumber']));
 });
 
 
