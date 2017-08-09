@@ -72,8 +72,9 @@ var htmlTemplate =`
 
 
 
-app.get('/page1',function(req,res){
-    res.send(createTemplate(pageContent));
+app.get('/:pageNumber',function(req,res){
+    //pagenumber==page-1
+    res.send(createTemplate(pages[pageNumber]));
 });
 
 app.get('/page2',function(req,res){
