@@ -21,8 +21,13 @@ var page1Content={
     </p>
     };
 
+function createTemplate (data) {
+var title= data.title;
+var heading=data.heading;
+var data=data.data;
+var content=data.content;
 
-var htmlTemplate ={
+var htmlTemplate ='
 <html>
 <head>
     <title>${heading}</title>
@@ -39,10 +44,11 @@ var htmlTemplate ={
     </div>
     </div>
 </body>
-</html>
-    
-    
-};
+</html>'
+ ;   
+    return htmlTemplate;
+
+}
 
 
 
