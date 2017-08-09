@@ -23,25 +23,26 @@ app.use(morgan('combined'));
     },
     'pageContent2':{
          heading:'Surya @page 2|imadApp',
-    title:'Page2',
-    date:'Aug 8,2017',
-    content:`
-     <p class="para"> 
-     This is content of page. This is content of page This is content of page2
-     </p>`
-    },
-    'pageContent3':{
-        heading:'Surya @Page 3|imadApp',
-    title:'Page3',
-    date:'Aug 8,2017',
-    content:`
-     <p class="para"> 
-     This is content of page. This is content of page This is content of page2
-     </p>`
-    },
+         title:'Page2',
+        date:'Aug 8,2017',
+        content:`
+         <p class="para"> 
+         This is content of page. This is content of page This is content of page2
+         </p>`
+        },
+        'pageContent3':{
+            heading:'Surya @Page 3|imadApp',
+        title:'Page3',
+        date:'Aug 8,2017',
+        content:`
+         <p class="para"> 
+         This is content of page. This is content of page This is content of page2
+         </p>`
+        },
  };
     
 function createTemplate (data) {
+    
 var title= data.title;
 var heading=data.heading;
 var date=data.date;
