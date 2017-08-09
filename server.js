@@ -10,11 +10,11 @@ app.get('/page1',function(req,res){
 });
 
 app.get('/page2',function(req,res){
-    res.send('PAGE 2 request is served ');
+    res.sendFile(path.join(__dirname, 'ui', 'page2.html'));
 });
 
 app.get('/page3',function(req,res){
-    res.send('PAGE 3 request is served ');
+    res.sendFile(path.join(__dirname, 'ui', 'page3.html'));
 });
 
 app.get('/', function (req, res) {
