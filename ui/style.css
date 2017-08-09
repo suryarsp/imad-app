@@ -181,7 +181,7 @@ p#para{
 
  /*  Conatainer Section*/
  
- .container{
+ div.container{
      max-width:980px;
      margin:auto;
      position:relative;
