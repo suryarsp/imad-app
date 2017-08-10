@@ -100,12 +100,16 @@ var rad=0;
              
           }
           };
+            
+            
+            var input=document.getElementById('name');
+            var nameInput=input.value;
+      
           //Make the request
           request.open('GET',"http://rspsuriya777.imad.hasura-app.io/submit-name?name="+name,true);
           request.send(null);
           
-            var input=document.getElementById('name');
-            var nameInput=input.value;
+         
       
      
         
