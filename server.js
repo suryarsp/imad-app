@@ -71,7 +71,7 @@ var htmlTemplate =`
 }
 
 
-
+/*
 app.get('/:pageNumber',function(req,res){
     //pagenumber==page-1
     //pages[pageNumber]==[]Content object for Page 1
@@ -81,7 +81,7 @@ app.get('/:pageNumber',function(req,res){
     //Each object conatains data that is sent as resposne 
     //Response is rendered as HTML page
     res.send(createTemplate(pages[pageNumber]));
-});
+});*/
 
 
 app.get('/', function (req, res) {
