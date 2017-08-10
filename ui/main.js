@@ -133,7 +133,7 @@ var rad=0;
             
             //Converting list into unordered list
             var para=document.getElementById('p_comment');
-            para.innerHTML=name.toString();
+            para.innerHTML=para.value;
                       }
              
           }
@@ -144,7 +144,7 @@ var rad=0;
             var name=nameinput.value;
       
           //Make the request
-          request.open('GET','http://rspsuriya777.imad.hasura-app.io/submit-name?name='+name,true);
+          request.open('GET','http://rspsuriya777.imad.hasura-app.io/page1',true);
           request.send(null);
         
     };
