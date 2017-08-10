@@ -24,7 +24,7 @@ app.use(morgan('combined'));
     </p>
     <input type="text" id="name" placeholder="ENter text"/>
     <input type="submit" id="submit_btn" value="Submit"/>
-    <p id="nameList"></p>
+    <p></p>
     `
     },
     'page2':{
@@ -34,7 +34,11 @@ app.use(morgan('combined'));
     content:`
      <p class="para"> 
      This is content of page. This is content of page This is content of page2
-     </p>`
+     </p>
+      <input type="text" id="name" placeholder="ENter text"/>
+    <input type="submit" id="submit_btn" value="Submit"/>
+    <p></p>
+    `
     },
     'page3':{
         heading:'Surya @Page 3|imadApp',
@@ -43,7 +47,11 @@ app.use(morgan('combined'));
     content:`
      <p class="para"> 
      This is content of page. This is content of page This is content of page2
-     </p>`
+     </p>
+      <input type="text" id="name" placeholder="ENter text"/>
+    <input type="submit" id="submit_btn" value="Submit"/>
+    <p></p>
+     `
     },
  };
     
