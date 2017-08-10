@@ -73,8 +73,19 @@ var rad=0;
     var submit=document.getElementById('submit_btn');
     submit.onclick=function(){
       //Make request to server and send the names
-      //Capture all names and render it as list
       
+      
+      //Capture all names and render it as list
+    var names=['name1','name2','name3'];
+    var li="";
+    for(var i=0;i<names.length;i++){
+        
+        list= list +'<li>'+names[i]+'li';
+        
+    }
+    //Converting list into unordered list
+    var ul=document.getElementById('nameList');
+    ul.innerHTML=list;
         
         
     };
