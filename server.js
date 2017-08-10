@@ -111,6 +111,19 @@ names.push(name);
 res.send(JSON.stringify(names));
 });
 
+app.get('/:pageNumber',function(req,res){
+    //pagenumber==page-1
+    //pages[pageNumber]==[]Content object for Page 1
+    var pageNumber=req.params.pageNumber;
+    //Array of Objects accessed using function
+    //pages is array name, [pageNumber] is index of each object
+    //Each object conatains data that is sent as resposne 
+    //Response is rendered as HTML page
+    res.send(createTemplate(pages[pageNumber]));
+});
+
+
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -128,17 +141,6 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 
-
-app.get('/:pageNumber',function(req,res){
-    //pagenumber==page-1
-    //pages[pageNumber]==[]Content object for Page 1
-    var pageNumber=req.params.pageNumber;
-    //Array of Objects accessed using function
-    //pages is array name, [pageNumber] is index of each object
-    //Each object conatains data that is sent as resposne 
-    //Response is rendered as HTML page
-    res.send(createTemplate(pages[pageNumber]));
-});
 
 
 
