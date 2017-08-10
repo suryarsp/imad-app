@@ -129,24 +129,18 @@ var rad=0;
              //Received in network
              {
                  //Capture all names and render it as list
-            var names=request.responseText;
-            names=JSON.parse(names);
-            var list="";
-            for(var i=0;i<names.length;i++){
-                
-                list +='<li>'+names[i]+'<li>';
-                
-            }
+            var name=request.responseText;
+            
             //Converting list into unordered list
-            var ul=document.getElementById('nameList');
-            ul.innerHTML=list;
+            var para=document.getElementById('p_comment');
+            para.innerHTML=name.toString();
                       }
              
           }
           };
             
             
-            var nameinput=document.getElementById('name');
+            var nameinput=document.getElementById('name_comments');
             var name=nameinput.value;
       
           //Make the request
