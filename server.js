@@ -124,16 +124,6 @@ res.send(JSON.stringify(names));
 
 app.get('/:pageNumber',function(req,res){
     
-    //Get the names from req
-var name = req.query.name;
-
-names.push(name);
-//can't send array of strings as response
-//JSON solves this problem
-
-res.send(JSON.stringify(names));
-
-    
     //pagenumber==page-1
     //pages[pageNumber]==[]Content object for Page 1
     var pageNumber=req.params.pageNumber;
