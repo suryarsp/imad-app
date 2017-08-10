@@ -75,11 +75,11 @@ var counter =0;
 app.get('/counter', function (req, res) {
     
     counter +=1;
-    res.send("This page has been refreshed " +counter.toString()+ "times" );
+    res.send("This page has been refreshed " +counter.toString()+ " times " );
   
 });
 
-/*
+
 app.get('/:pageNumber',function(req,res){
     //pagenumber==page-1
     //pages[pageNumber]==[]Content object for Page 1
@@ -89,7 +89,7 @@ app.get('/:pageNumber',function(req,res){
     //Each object conatains data that is sent as resposne 
     //Response is rendered as HTML page
     res.send(createTemplate(pages[pageNumber]));
-});*/
+});
 
 
 app.get('/', function (req, res) {
