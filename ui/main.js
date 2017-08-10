@@ -48,10 +48,10 @@ var rad=0;
      //Capture response and store it in var
      request.onreadystatechange=function(){
          
-         if(request.readyState==XMLHttpRequest().DONE)
+         if(request.readyState===new XMLHttpRequest().DONE)
          {
              //Take action on request
-             if(request.status==200)
+             if(request.status===200)
              //Received in network
              {
                  var counter = request.responseText;
