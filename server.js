@@ -54,20 +54,6 @@ app.get('/counter', function (req, res) {
   
 });
 
-var names=[];
-app.get('/submit-name/:name', function (req, res) { 
-                                                        //We get query string grom url
-                                                       // [/submit-name]?=xxxx-->Query String
-//Get the names from req
-var name=req.query.name;
-
-names.push(name);
-//can't send array of strings as response
-//JSON solves this problem
-
-
-res.send(JSON.stringify(names));
-});
     
 function createTemplate (data) {
 var title= data.title;
@@ -100,18 +86,21 @@ var htmlTemplate =`
 
 
 
+var names=[];
+app.get('/submit-name/:name', function (req, res) { 
+                                                        //We get query string grom url
+                                                       // [/submit-name]?=xxxx-->Query String
+//Get the names from req
+var name=req.query.name;
+
+names.push(name);
+//can't send array of strings as response
+//JSON solves this problem
 
 
-app.get('/:pageNumber',function(req,res){
-    //pagenumber==page-1
-    //pages[pageNumber]==[]Content object for Page 1
-    var pageNumber=req.params.pageNumber;
-    //Array of Objects accessed using function
-    //pages is array name, [pageNumber] is index of each object
-    //Each object conatains data that is sent as resposne 
-    //Response is rendered as HTML page
-    res.send(createTemplate(pages[pageNumber]));
+res.send(JSON.stringify(names));
 });
+
 
 
 app.get('/', function (req, res) {
@@ -133,6 +122,17 @@ app.get('/ui/surya.jpg', function (req, res) {
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+
+app.get('/:pageNumber',function(req,res){
+    //pagenumber==page-1
+    //pages[pageNumber]==[]Content object for Page 1
+    var pageNumber=req.params.pageNumber;
+    //Array of Objects accessed using function
+    //pages is array name, [pageNumber] is index of each object
+    //Each object conatains data that is sent as resposne 
+    //Response is rendered as HTML page
+    res.send(createTemplate(pages[pageNumber]));
 });
 
 
