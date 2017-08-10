@@ -71,14 +71,6 @@ var htmlTemplate =`
 }
 
 
-var counter =0;
-app.get('/counter', function (req, res) {
-    
-    counter +=1;
-    res.send(counter.toString() );
-  
-});
-
 var names=[];
 app.get('/submit-name/:name', function (req, res) { 
                                                         //We get query string grom url
@@ -93,6 +85,15 @@ names.push(name);
 
 res.send(JSON.stringify(names));
 });
+
+var counter =0;
+app.get('/counter', function (req, res) {
+    
+    counter +=1;
+    res.send(counter.toString() );
+  
+});
+
 
 app.get('/:pageNumber',function(req,res){
     //pagenumber==page-1
