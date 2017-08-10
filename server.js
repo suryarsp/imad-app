@@ -5,28 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var names=[];
-app.get('/submit-name/:name', function (req, res) { 
-                                                        //We get query string grom url
-                                                       // [/submit-name]?=xxxx-->Query String
-//Get the names from req
-var name=req.params.name;
 
-names.push(name);
-//can't send array of strings as response
-//JSON solves this problem
-
-
-res.send(JSON.stringify(names));
-});
-
-var counter =0;
-app.get('/counter', function (req, res) {
-    
-    counter +=1;
-    res.send(counter.toString() );
-  
-});
 
  var pages={
  'page1':{
@@ -63,6 +42,30 @@ app.get('/counter', function (req, res) {
      </p>`
     },
  };
+    
+    
+var names=[];
+app.get('/submit-name/:name', function (req, res) { 
+                                                        //We get query string grom url
+                                                       // [/submit-name]?=xxxx-->Query String
+//Get the names from req
+var name=req.params.name;
+
+names.push(name);
+//can't send array of strings as response
+//JSON solves this problem
+
+
+res.send(JSON.stringify(names));
+});
+
+var counter =0;
+app.get('/counter', function (req, res) {
+    
+    counter +=1;
+    res.send(counter.toString() );
+  
+});
     
 function createTemplate (data) {
 var title= data.title;
