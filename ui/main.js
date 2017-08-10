@@ -54,8 +54,8 @@ var rad=0;
              if(request.status===200)
              //Received in network
              {
-                 var counter=request.responseText;
-                 var span=document.getElementById('count');
+                 var counter = request.responseText;
+                 var span    = document.getElementById('count');
                  span.innerHTML=counter.toString();
               }
              
