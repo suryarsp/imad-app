@@ -54,7 +54,7 @@ var rad=0;
      span.innerHTML=counter.toString();
      
      
- }
+ };
  
  
  
