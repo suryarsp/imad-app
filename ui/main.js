@@ -9,6 +9,9 @@ html_Element.innerHTML=
     Finished Creating Profile page<hr>
     Added CSS styles and more responsive<hr>
     Made changes in server.js using Express js and handler functions<hr>
+    Learned functions and object in js <hr>
+    More terminologies on network understood<hr>
+    Learned how DNS works
     </span>
     </div>
     </div>
