@@ -10,7 +10,7 @@ app.get('/submit-name/:name', function (req, res) {
                                                         //We get query string grom url
                                                        // [/submit-name]?=xxxx-->Query String
 //Get the names from req
-var name=req.names;
+var name=req.params.names;
 
 names.push(name);
 //can't send array of strings as response
