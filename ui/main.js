@@ -24,7 +24,7 @@ html_Element.innerHTML=
 var img=document.getElementById('imgright');
 var rad=0;
  function resize(){
-     rad= rad +1;
+     rad= rad + 0.5;
       img.style.borderRadius= rad +"px";
        img.style.borderStyle="dotted";
      
@@ -32,6 +32,6 @@ var rad=0;
  }
  img.onclick=function(){
      
-   var interval=setInterval(resize,50);
+   var interval=setInterval(resize,80);
    
  };
