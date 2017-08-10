@@ -102,8 +102,8 @@ var rad=0;
           };
             
             
-            var input=document.getElementById('name');
-            var nameInput=input.value;
+            var nameinput=document.getElementById('name');
+            var name=nameinput.value;
       
           //Make the request
           request.open('GET','http://rspsuriya777.imad.hasura-app.io/submit-name?name='+name,true);
