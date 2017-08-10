@@ -124,7 +124,7 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('/:pageNumber',function(req,res){
+/*app.get('/:pageNumber',function(req,res){
     //pagenumber==page-1
     //pages[pageNumber]==[]Content object for Page 1
     var pageNumber=req.params.pageNumber;
@@ -134,7 +134,7 @@ app.get('/:pageNumber',function(req,res){
     //Response is rendered as HTML page
     res.send(createTemplate(pages[pageNumber]));
 });
-
+*/
 
 
 
