@@ -62,8 +62,7 @@ var rad=0;
           }
           };
           //Make the request
-          var url="http://rspsuriya777.imad.hasura-app.io/counter";
-          request.open('GET',url,true);
+          request.open('GET',"http://rspsuriya777.imad.hasura-app.io/counter",true);
           request.send(null);
           };
  
