@@ -82,7 +82,7 @@ app.get('/:pageNumber',function(req,res){
 var counter =0;
 app.get('/refresh', function (req, res) {
     counter +=1;
-    res.send(" This page has been visited or refreshed"+counter.toString() );
+    res.send(" This page has been visited or refreshed" +counter.toString() );
   
 });
 
