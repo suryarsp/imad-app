@@ -50,6 +50,7 @@ var rad=0;
      
      
      //Represent the var using span
+     counter+=1;
      var span=document.getElementById('count');
      span.innerHTML=counter.toString();
      
