@@ -97,16 +97,15 @@ app.get('/counter', function (req, res) {
 
 
 var names=[];
-app.get('/submit-name/:name', function (req, res) { 
+app.get('/submit-name/', function (req, res) { 
                                                         //We get query string grom url
                                                        // [/submit-name]?=xxxx-->Query String
 //Get the names from req
-var name=req.query.name;
+var name = req.query.name;
 
 names.push(name);
 //can't send array of strings as response
 //JSON solves this problem
-
 
 res.send(JSON.stringify(names));
 });
