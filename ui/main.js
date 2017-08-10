@@ -22,10 +22,16 @@ html_Element.innerHTML=
 //Changing Img border radius and Border style
 
 var img=document.getElementById('imgright');
- 
+var rad=0;
+ function resize(){
+     rad= rad +1;
+      img.style.borderRadius= rad +"px";
+       img.style.borderStyle="dotted";
+     
+     
+ }
  img.onclick=function(){
      
-   img.style.borderRadius="40px";
-   img.style.borderStyle="dotted";   
+   var interval=setInterval(resize,50);
    
  };
