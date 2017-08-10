@@ -86,20 +86,6 @@ var htmlTemplate =`
 
 
 
-var names=[];
-app.get('/submit-name/:name', function (req, res) { 
-                                                        //We get query string grom url
-                                                       // [/submit-name]?=xxxx-->Query String
-//Get the names from req
-var name=req.params.name;
-
-names.push(name);
-//can't send array of strings as response
-//JSON solves this problem
-
-
-res.send(JSON.stringify(names));
-});
 
 
 
@@ -122,6 +108,21 @@ app.get('/ui/surya.jpg', function (req, res) {
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+
+var names=[];
+app.get('/submit-name/:name', function (req, res) { 
+                                                        //We get query string grom url
+                                                       // [/submit-name]?=xxxx-->Query String
+//Get the names from req
+var name=req.params.name;
+
+names.push(name);
+//can't send array of strings as response
+//JSON solves this problem
+
+
+res.send(JSON.stringify(names));
 });
 
 /*app.get('/:pageNumber',function(req,res){
