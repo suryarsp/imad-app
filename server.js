@@ -79,6 +79,13 @@ app.get('/:pageNumber',function(req,res){
     res.send(createTemplate(pages[pageNumber]));
 });
 
+var counter =0;
+app.get('/refresh', function (req, res) {
+    counter +=1;
+    res.send(" This page has been visited or refreshed"+counter.toString() );
+  
+});
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
