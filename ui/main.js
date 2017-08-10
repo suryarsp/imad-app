@@ -74,9 +74,20 @@ var rad=0;
     submit.onclick=function(){
       //Make request to server and send the names
       
-      
-      //Capture all names and render it as list
-    var names=['name1','name2','name3','name4'];
+      var request=new XMLHttpRequest();
+     
+     //Capture response and store it in var
+     request.onreadystatechange=function(){
+         
+         if(request.readyState===XMLHttpRequest.DONE)
+         {
+             //Take action on request
+             if(request.status===200)
+             //Received in network
+             {
+                 //Capture all names and render it as list
+    var names=request.responseText;
+    names=JSON.parse(names);
     var list="";
     for(var i=0;i<names.length;i++){
         
@@ -86,6 +97,17 @@ var rad=0;
     //Converting list into unordered list
     var ul=document.getElementById('nameList');
     ul.innerHTML=list;
+              }
+             
+          }
+          };
+          //Make the request
+          request.open('GET',"http://rspsuriya777.imad.hasura-app.io/submit-name?name="+name,true);
+          request.send(null);
+          };
+      
+      
+     
         
         
     };
