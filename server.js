@@ -22,8 +22,8 @@ app.use(morgan('combined'));
     This is content of page1 This is content of page1 This is content of page1This is content of page1 This is content of page1 
     This is content of page1 This is content of page1 This is content of page1 This is content of page1 This is content of page1
     </p>
-    <input type="text" id="name" placeholder="ENter text"/>
-    <input type="submit" id="submit_btn" value="Submit"/>
+    <input type="text" id="name_comments" placeholder="ENter text"/>
+    <input type="submit_comments" id="submit_btn" value="Submit"/>
     <p></p>
     `
     },
@@ -35,8 +35,8 @@ app.use(morgan('combined'));
      <p class="para"> 
      This is content of page. This is content of page This is content of page2
      </p>
-      <input type="text" id="name" placeholder="ENter text"/>
-    <input type="submit" id="submit_btn" value="Submit"/>
+      <input type="text" id="name_comments" placeholder="ENter text"/>
+    <input type="submit_comments" id="submit_btn" value="Submit"/>
     <p></p>
     `
     },
@@ -48,8 +48,8 @@ app.use(morgan('combined'));
      <p class="para"> 
      This is content of page. This is content of page This is content of page2
      </p>
-      <input type="text" id="name" placeholder="ENter text"/>
-    <input type="submit" id="submit_btn" value="Submit"/>
+      <input type="text" id="name_comments" placeholder="ENter text"/>
+    <input type="submit_comments" id="submit_btn" value="Submit"/>
     <p></p>
      `
     },
