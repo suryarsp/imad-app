@@ -3,7 +3,7 @@ console.log('Loaded!');
 
 //Working of changing HTML tags by js elements
 
-var html_Element=document.getElementById('foo');
+/*var html_Element=document.getElementById('foo');
 html_Element.innerHTML=
 `   <div>
     <h2>Activities done</h2>
@@ -34,7 +34,7 @@ var rad=0;
      
    var interval=setInterval(resize,80);
    
- };
+ };*/
  
  //Counter Endpoint 
  
