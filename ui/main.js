@@ -106,13 +106,8 @@ var rad=0;
             var nameInput=input.value;
       
           //Make the request
-          request.open('GET',"http://rspsuriya777.imad.hasura-app.io/submit-name?name="+name,true);
+          request.open('GET','http://rspsuriya777.imad.hasura-app.io/submit-name?name='+name,true);
           request.send(null);
-          
-         
-      
-     
-        
         
     };
  
