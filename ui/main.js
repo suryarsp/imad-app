@@ -65,6 +65,19 @@ var rad=0;
           request.open('GET',"http://rspsuriya777.imad.hasura-app.io/counter",true);
           request.send(null);
           };
+          
+          
+    //Submit name
+    var input=document.getElementById('name');
+    var nameInput=input.value;
+    var submit=document.getElementById('submit_btn');
+    submit.onclick=function(){
+      //Make request to server and send the names
+      //Capture all names and render it as list
+      
+        
+        
+    };
  
  
  
