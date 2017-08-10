@@ -114,8 +114,10 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 var names=[];
-app.get('/submit-name/:name', function (req, res) {
-  //Get the names from req
+app.get('/submit-name/:name', function (req, res) { 
+                                                        //We get query string grom url
+                                                        // [/submit-name]?=xxxx-->Query String
+    //Get the names from req
   var name=req.params.name;
   
   names.push(name);
