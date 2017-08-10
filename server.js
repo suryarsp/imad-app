@@ -24,7 +24,7 @@ app.use(morgan('combined'));
     </p>
     <input type="text" id="name_comments" placeholder="ENter text"/>
     <input type="submit_comments" id="submit_btn" value="Submit"/>
-    <p></p>
+    <p id="p_comment"></p>
     `
     },
     'page2':{
@@ -37,7 +37,7 @@ app.use(morgan('combined'));
      </p>
       <input type="text" id="name_comments" placeholder="ENter text"/>
     <input type="submit_comments" id="submit_btn" value="Submit"/>
-    <p></p>
+    <p id="p_comment"></p>
     `
     },
     'page3':{
@@ -50,7 +50,7 @@ app.use(morgan('combined'));
      </p>
       <input type="text" id="name_comments" placeholder="ENter text"/>
     <input type="submit_comments" id="submit_btn" value="Submit"/>
-    <p></p>
+    <p id="p_comment"></p>
      `
     },
  };
