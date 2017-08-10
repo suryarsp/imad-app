@@ -48,7 +48,7 @@ var rad=0;
      //Capture response and store it in var
      request.onreadystatechange=function(){
          
-         if(request.readystate===XMLHttpRequest())
+         if(request.readyState===XMLHttpRequest())
          {
              //Take action on request
              if(request.status===200)
