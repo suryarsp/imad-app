@@ -80,7 +80,7 @@ var rad=0;
     var li="";
     for(var i=0;i<names.length;i++){
         
-        list= list +'<li>'+names[i]+'li';
+        list= list +'<li>'+names[i]+'<li>';
         
     }
     //Converting list into unordered list
