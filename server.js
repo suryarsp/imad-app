@@ -75,7 +75,7 @@ var counter =0;
 app.get('/counter', function (req, res) {
     
     counter +=1;
-    res.send("This page has been refreshed " +counter.toString()+ " times " );
+    res.send(counter.toString() );
   
 });
 
