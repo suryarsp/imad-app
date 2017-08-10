@@ -68,8 +68,7 @@ var rad=0;
           
           
     //Submit name
-    var input=document.getElementById('name');
-    var nameInput=input.value;
+ 
     var submit=document.getElementById('submit_btn');
     submit.onclick=function(){
       //Make request to server and send the names
@@ -105,7 +104,8 @@ var rad=0;
           request.open('GET',"http://rspsuriya777.imad.hasura-app.io/submit-name?name="+name,true);
           request.send(null);
           
-      
+            var input=document.getElementById('name');
+            var nameInput=input.value;
       
      
         
