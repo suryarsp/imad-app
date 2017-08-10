@@ -38,22 +38,33 @@ var rad=0;
  
  //Counter Endpoint 
  
- var counter=0;
  
  var button=document.getElementById('counter');
  button.onclick=function(){
      
      //Make request to counter endpoint
-     
+     var request=new XMLHttpRequest();
      
      //Capture response and store it in var
+     request.onreadystatechange=function(){
+         
+         if(request.readystate===XMLHttpRequest())
+         {
+             //Take action on request
+             if(request.status===200)
+             //Received in network
+             {
+                 var counter=request.responseText;
+                 var span=document.getElementById('count');
+                 span.innerHTML=counter.toString();
+                 
+             }
+             
+         }
+         
+     }
      
-     
-     //Represent the var using span
-     counter+=1;
-     var span=document.getElementById('count');
-     span.innerHTML=counter.toString();
-     
+         
      
  };
  
