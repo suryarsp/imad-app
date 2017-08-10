@@ -42,7 +42,7 @@ var rad=0;
  var button=document.getElementById('counter');
  button.onclick=function(){
      
-     //Make request to counter endpoint
+     //Create request to counter endpoint
      var request=new XMLHttpRequest();
      
      //Capture response and store it in var
@@ -57,16 +57,11 @@ var rad=0;
                  var counter=request.responseText;
                  var span=document.getElementById('count');
                  span.innerHTML=counter.toString();
-                 
-             }
+              }
              
-         }
-         
-     }
-     
-         
-     
- };
+          }
+          };
+          };
  
  
  
