@@ -125,7 +125,7 @@ names.push(name);
 res.send(JSON.stringify(names));
 });
 
-/*app.get('/:pageNumber',function(req,res){
+app.get('/:pageNumber',function(req,res){
     //pagenumber==page-1
     //pages[pageNumber]==[]Content object for Page 1
     var pageNumber=req.params.pageNumber;
@@ -135,7 +135,7 @@ res.send(JSON.stringify(names));
     //Response is rendered as HTML page
     res.send(createTemplate(pages[pageNumber]));
 });
-*/
+
 
 
 
