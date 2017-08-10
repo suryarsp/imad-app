@@ -21,7 +21,11 @@ app.use(morgan('combined'));
    <p class="para">
     This is content of page1 This is content of page1 This is content of page1This is content of page1 This is content of page1 
     This is content of page1 This is content of page1 This is content of page1 This is content of page1 This is content of page1
-    </p>`
+    </p>
+    <input type="text" id="name" placeholder="ENter text"/>
+    <input type="submit" id="submit_btn" value="Submit"/>
+    <p id="nameList"></p>
+    `
     },
     'page2':{
          heading:'Surya @page 2|imadApp',
