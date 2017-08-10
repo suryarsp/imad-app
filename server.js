@@ -46,14 +46,6 @@ app.use(morgan('combined'));
     
 
 
-var counter =0;
-app.get('/counter', function (req, res) {
-    
-    counter +=1;
-    res.send(counter.toString() );
-  
-});
-
     
 function createTemplate (data) {
 var title= data.title;
@@ -94,6 +86,31 @@ app.get('/', function (req, res) {
 });
 
 
+var counter =0;
+app.get('/counter', function (req, res) {
+    
+    counter +=1;
+    res.send(counter.toString() );
+  
+});
+
+
+
+var names=[];
+app.get('/submit-name/:name', function (req, res) { 
+                                                        //We get query string grom url
+                                                       // [/submit-name]?=xxxx-->Query String
+//Get the names from req
+var name=req.params.name;
+
+names.push(name);
+//can't send array of strings as response
+//JSON solves this problem
+
+
+res.send(JSON.stringify(names));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -110,20 +127,7 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-var names=[];
-app.get('/submit-name/:name', function (req, res) { 
-                                                        //We get query string grom url
-                                                       // [/submit-name]?=xxxx-->Query String
-//Get the names from req
-var name=req.params.name;
 
-names.push(name);
-//can't send array of strings as response
-//JSON solves this problem
-
-
-res.send(JSON.stringify(names));
-});
 
 app.get('/:pageNumber',function(req,res){
     //pagenumber==page-1
