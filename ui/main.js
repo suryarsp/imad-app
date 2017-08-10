@@ -35,3 +35,42 @@ var rad=0;
    var interval=setInterval(resize,80);
    
  };
+ 
+ //Counter Endpoint 
+ 
+ var counter=0;
+ 
+ var button=document.getElementById('counter');
+ button.onclick=function(){
+     
+     //Make request to counter endpoint
+     
+     
+     //Capture response and store it in var
+     
+     
+     //Represent the var using span
+     var span=document.getElementById('count');
+     span.innerHTML=counter.toString();
+     
+     
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
