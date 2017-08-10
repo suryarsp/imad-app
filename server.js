@@ -79,9 +79,9 @@ app.get('/:pageNumber',function(req,res){
     res.send(createTemplate(pages[pageNumber]));
 });
 
-var counter =0;
+var refresh =0;
 app.get('/refresh', function (req, res) {
-    counter = counter + 1;
+    refresh = refresh + 1;
     res.send(counter.toString() );
   
 });
